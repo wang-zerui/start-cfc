@@ -13,7 +13,6 @@ $ s init xinwuyun/start-cfc
 
 进入任一项目执行
 ```
-$ cd node-http
 $ s deploy
 ```
 
