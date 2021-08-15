@@ -11,13 +11,7 @@ $ npm install -g @serverless/s
 $ s init xinwuyun/start-cfc
 ```
 
-安装依赖
-```
-$ cd start-cfc
-$ npm i
-```
-
-进入案例进行部署
+进入项目部署
 ```
 $ cd node-http
 $ s deploy
