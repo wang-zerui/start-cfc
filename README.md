@@ -11,8 +11,10 @@ $ npm install -g @serverless/s
 $ s init xinwuyun/start-cfc
 ```
 
-进入项目部署
+进入任一项目执行
 ```
 $ cd node-http
 $ s deploy
 ```
+
+服务部署成功访问
