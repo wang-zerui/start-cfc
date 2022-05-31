@@ -1,16 +1,16 @@
 edition: 1.0.0        #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
 name: component-test   #  项目名称
-
+access: "{{ access }}"  
 services:
   component-test: #  服务名称
-    component: xinwuyun/cfc # 这里引入的是相对路径，正式配置替换成你自己的component名称即可 
+    component: cfc # 这里引入的是相对路径，正式配置替换成你自己的component名称即可 
     props:
       code:
-        codeUri: ./
+        codeUri: ./code
         publish: false
         dryRun: false
-      functionName: TestPython
-      description: 用于测试各种TestPython
+      functionName: CFC-test-python3
+      description: 
       handler: index.handler 
       endpoint: cfc.bj.baidubce.com
       protocol: https
@@ -25,7 +25,7 @@ services:
         source: cfc-http-trigger/v1/CFCAPI
         data:
           Enable: Enabled
-          ResourcePath: /testpy2
+          ResourcePath: /testpy
           Method: GET
           AuthType: anonymous
         # bucket: wzr-test
